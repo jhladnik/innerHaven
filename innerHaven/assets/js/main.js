@@ -128,14 +128,14 @@
 
 				$form.addEventListener('submit', function(event) {
 
-					event.stopPropagation();
-					event.preventDefault();
+					 event.stopPropagation();
+					 event.preventDefault();
 
 					// Hide message.
 						$message._hide();
 
 					// Disable submit.
-						$submit.disabled = true;
+						$submit.disabled = false;
 
 					// Process form.
 					// Note: Doesn't actually do anything yet (other than report back with a "thank you"),
